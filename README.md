@@ -19,3 +19,5 @@ The diagram below illustrates the program's modules and their connections:
 
 
 Above is presented the general structure of the tool: each blue block is a file in Julia containing a single method (bootstrap, fitmodel and kinetics). At the top are conceptually represented the inputs, and at the bottom the outputs of each method. The arrows indicate the order of execution of each step and calls from one method to another. The user can call each of the three illustrated methods independently, depending on the task to be performed (simulation of the model or adjustment of its parameters).
+
+For a detailed description of each module, check out our wiki!
