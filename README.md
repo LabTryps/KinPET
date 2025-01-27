@@ -21,3 +21,12 @@ The diagram below illustrates the program's modules and their connections:
 Above is presented the general structure of the tool: each blue block is a file in Julia containing a single method (bootstrap, fitmodel and kinetics). At the top are conceptually represented the inputs, and at the bottom the outputs of each method. The arrows indicate the order of execution of each step and calls from one method to another. The user can call each of the three illustrated methods independently, depending on the task to be performed (simulation of the model or adjustment of its parameters).
 
 For a detailed description of each module, check out our wiki!
+
+## Future developement
+
+At this point, KinPET is still on beta. Some things we plan to add in the near future include:
+* An interface to allow easy integration with Python code
+* So far we allow for multiple experimental batches (see the wiki for details), but with the exception of the amount of enzyme, all model parameters apply to all batches. It can be useful to support additional "batch parameters", that are optimized only within experiments of the same batch, and not globally
+* Built-in generation of useful plots, such as histograms of the optimized parameters considering all bootstrap replicas
+
+If there is something else you would like to see incorporated into KinPET, reach out in the "Discussions" tab, or - even better - open a PR. Contributions are welcome!
